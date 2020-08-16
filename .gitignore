@@ -1,0 +1,30 @@
+# Few other folders just to scrap them away
+OtherProjects
+
+# Back-End logic - files not up for sharing
+Calculator/.vs
+Calculator/Debug
+Calculator/packages
+Calculator/Release
+Calculator/x64
+Calculator/Calculator.sln
+Calculator/Calculator.vcxproj
+Calculator/Calculator.vcxproj.filters
+Calculator/Calculator.vcxproj.user
+Calculator/packages.config
+
+# Tests Logic - To Ignore
+Calculator_Tests/.vs
+Calculator_Tests/Debug
+Calculator_Tests/packages
+Calculator_Tests/Release
+Calculator_Tests/Calculator_Tests.sln
+Calculator_Tests/Calculator_Tests.vcxproj
+Calculator_Tests/Calculator_Tests.vcxproj.user
+Calculator_Tests/packages.config
+
+# GUI Logic - To Ignore
+CalculatorGUI/x64
+CalculatorGUI/CalculatorGUI.vcxproj
+CalculatorGUI/CalculatorGUI.vcxproj.filters
+CalculatorGUI/CalculatorGUI.vcxproj.user
