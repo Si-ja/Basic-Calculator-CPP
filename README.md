@@ -34,7 +34,7 @@ An example of how calculations take place and what the user is greated with when
 
 Several Unit tests are made with Google Tests package in order to allow for a swift checking of whether all of the developer functions and methods perform as expected. The only important test not implemented: checking of how the tree is drawn.
 
-![](https://github.com/Si-ja/Basic-Calculator-CPP/blob/master/Visuals/CurrentTests.PNG "Current State of Tests")
+![](https://github.com/Si-ja/Basic-Calculator-CPP/blob/master/Visuals/CurrentTests.png "Current State of Tests")
 
 ## GUI
 
