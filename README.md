@@ -22,9 +22,19 @@ The current system assumes several things about the mathematical expression that
 * You can use opening and closing brackets to chose which calculations need to be performed in which order (as you'd do with regular math expressions). E.g.: ( 1 + 2 ) * 3
 * Currently the algorithm only supports the following operators: `+`, `-`, `/`, `*` and opening and closing brackets `(`, `)`.
 
+An example of how calculations take place and what the user is greated with when starting the back-end logic testing main can be seen here:
+
+![](https://github.com/Si-ja/Basic-Calculator-CPP/blob/master/Visuals/Console_EnterData.PNG "Entry Screen")
+
+![](https://github.com/Si-ja/Basic-Calculator-CPP/blob/master/Visuals/Console_BasicExample.PNG "Basic Equation Example")
+
+![](https://github.com/Si-ja/Basic-Calculator-CPP/blob/master/Visuals/Console_ExampleVariables.PNG "Example with Undefined Variables")
+
 ## Unit Tests
 
 Several Unit tests are made with Google Tests package in order to allow for a swift checking of whether all of the developer functions and methods perform as expected. The only important test not implemented: checking of how the tree is drawn.
+
+![](https://github.com/Si-ja/Basic-Calculator-CPP/blob/master/Visuals/CurrentTests.PNG "Current State of Tests")
 
 ## GUI
 
@@ -33,6 +43,10 @@ A GUI is built with Qt framework and allows to imitate the performance of a very
 Do note that all of the same rules and notices that were mentioned in the Back-End logic section apply in the GUI environment. 
 
 For unknown variable inputs a seperate screen is dedicated at the bottom of the calculator indicating if any variables need to be changed to real values, before calculations could take place.
+
+Example of the working GUI can be seen here:
+
+![](https://github.com/Si-ja/Basic-Calculator-CPP/blob/master/Visuals/Calculator.gif "GUI")
 
 ## Know Issues, Concerns, Plans for the Future
 
