@@ -10,7 +10,7 @@ This project holds a basic example of how a calculator could be built in C++. 3 
 
 The back-end logic is stored in the Folder `Calculator`. The `main` function is stored in the `Calculator.cpp` file. By running it, a user will have an opportunity to enter a mathematical expression in a console, and will receive an answer to it. This section is developed in such way to test how operations of the calculator could be structured, before implementing the whole calculator in the GUI interface.
 
-The calculations take place through convertsion of an infix mathematical expression into a postfix version of it. All of the functions that allow for that to happen (e.g. parsing of the expression, validating it and converting to postifx) are stored in `ParsingFunctions.cpp\h` files.
+The calculations take place through conversion of an infix mathematical expression into a postfix version of it. All of the functions that allow for that to happen (e.g. parsing of the expression, validating it and converting to postifx) are stored in `ParsingFunctions.cpp\h` files.
 
 Afterwards, the expression is broken into an Expression Tree. Calculations happen based on the traversal of the tree. The tree essentially is just a class of class Nodes. The tree itself can be evaluated with an inbuilt method `print()` and can be seen used on line 34 of the `main` function. Calculations with the help of the tree happen using the inbuilt method of `calc()` and can be seen used on line 40 of the `main` function. All of the methods for the tree are stored in its class called `MainTree` and are located in the file `Tree.cpp\h`.
 
@@ -18,9 +18,9 @@ __IMPORTANT__:
 
 The current system assumes several things about the mathematical expression that is entered, in order to properly function:
 
-* A space is made between every operator, operand and variable that are entered. E.g: 1+2 should be written as 1 + 2 (the amount of spaces does not matter, only their pressence is required).
+* A space is made between every operator, operand and variable that are entered. E.g: `1+2` should be written as `1 + 2` (the amount of spaces does not matter, only their pressence is required).
 * You can enter unidentified variables in any format. E.g. `x`, `y`, `x1`, `xyz`, `123x`, etc. But they cannot be calculated or stored in memory. Therefore, the algorithm will require the user to replace them with real values before the calculations will take place.
-* You can enter values with floating points. This needs to be performed by writting a `.` in the definition of a value. E.g. 5.5 + 2.2123
+* You can enter values with floating points. This needs to be performed by writting a `.` in the definition of a value. E.g. `5.5 + 2.2123`
 * You can use opening and closing brackets to chose which calculations need to be performed in which order (as you'd do with regular math expressions). E.g.: ( 1 + 2 ) * 3
 * Currently the algorithm only supports the following operators: `+`, `-`, `/`, `*` and opening and closing brackets `(`, `)`.
 
@@ -28,7 +28,7 @@ An example of how calculations take place and what the user is greated with when
 
 ![](https://github.com/Si-ja/Basic-Calculator-CPP/blob/master/Visuals/Console_EnterData.PNG "Entry Screen")
 
-Entering an expression `( 5 + 10 ) * 3.33 / ( 4 - 1 ) and results that are provided further:
+Entering an expression `( 5 + 10 ) * 3.33 / ( 4 - 1 )` and results that are provided further:
 
 ![](https://github.com/Si-ja/Basic-Calculator-CPP/blob/master/Visuals/Console_BasicExample.PNG "Basic Equation Example")
 
@@ -76,7 +76,7 @@ _Goal for the future_: Spend more time on the components that cover graphics.
 
 ---
 
-__Errors Handling__: Currently there are no errors handling in the code. Even though many cases that could cause an error are mitigated, but some aren't. For instance, an undefined variable cannot start from a symbols that is an operator (excpet for `-`) as they are treated as special characters. Therefore, writing something as (5 + 8 ), will not tell the algorithm to treat `(5` as an unknown variable, but will crash the calculator.
+__Errors Handling__: Currently there are no errors handling in the code. Even though many cases that could cause an error are mitigated, but some aren't. For instance, an undefined variable cannot start from a symbols that is an operator (excpet for `-`) as they are treated as special characters. Therefore, writing something as `(5 + 8 )`, will not tell the algorithm to treat `(5` as an unknown variable, but will crash the calculator.
 
 _Current issue_: Errors handling is not implemented to the best of its ability, hence rather than treating some issues as soft resets to the GUI, the calculator might crash all together.
 
