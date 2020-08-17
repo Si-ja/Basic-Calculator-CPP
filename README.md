@@ -1,6 +1,6 @@
 # Basic Calculator in C++
 
-This project holds a basic example of how a calculator could be built in C++. 3 components are utilized here described further.
+This project holds a basic example of how a calculator could be built in C++. 3 components are utilized:
 
 1. The Back-End logic of calculation operations
 2. Unit tests
@@ -8,7 +8,7 @@ This project holds a basic example of how a calculator could be built in C++. 3 
 
 ## The Back-End Logic
 
-The back-end logic is stored in the Folder `Calculator`. Class `main` is stored in the `Calculator.cpp` file. By running it, a user can enter a mathematical expression in a console, and will receive an answer to it. This section is developer in such a way, to test how operations of the calculator could be stored, before implementing the whole calculative process in the GUI interface.
+The back-end logic is stored in the Folder `Calculator`. Class `main` is stored in the `Calculator.cpp` file. By running it, a user can enter a mathematical expression in a console, and will receive an answer to it. This section is developed in such way, to test how operations of the calculator could be stored, before implementing the whole calculative process in the GUI interface.
 
 The calculations take place through convertsion of an infix mathematical expression into a postfix version of it. All of the functions that allow for that to happen (e.g. parsing of the expression, validating it and converting) are stored in `ParsingFunctions.cpp\h` file.
 
