@@ -26,7 +26,7 @@ std::vector<std::string> update_variables(std::vector<std::string> expression, b
 /// </summary>
 /// <param name="checker">A verifying variable that makes sure whether unidentified variables are present or not</param>
 /// <param name="expression">A parased mathematical expression</param>
-/// <returns>A string, identifying which variables need to be </returns>
+/// <returns>A string, identifying which variables need to be updated to their values indicators</returns>
 std::string update_variables_gui(std::vector<std::string> expression, bool& checker);
 
 /// <summary>
@@ -39,7 +39,7 @@ bool check_precedents(std::string stack_top, std::string expression);
 
 /// <summary>
 /// Function that helps to verify whether poping from stack should continue or stop,
-/// if there are opening and closing parenthesis.
+/// if there are opening and closing brackets.
 /// </summary>
 /// <param name="stack_top">Current variables in the top of the stack.</param>
 /// <param name="expression">Current expression being passed to the algorithm.</param>
